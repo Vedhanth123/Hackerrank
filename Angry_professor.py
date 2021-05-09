@@ -31,6 +31,7 @@ k = random.randint(0,len(test_cases))
 
 print(k)
 
+# running the function
 
 
 print(angryProfessor(3, [-1, -3, 4, 2]))
