@@ -1,44 +1,42 @@
+
 # Given an array of integers, find the longest subarray where the absolute difference between any two elements is less than or equal to .
 
 # Example
+# a = [1,1,2,2,4,4,5,5,5]
 
 
-# There are two subarrays meeting the criterion:  and . The maximum length subarray has  elements.
+# There are two subarrays meeting the criterion:[1,1,2,2]  and [4,4,5,5,5]. The maximum length subarray has  elements.
 
-
-# algorithm
-# 1) take a number and compare it with every other number in the array after comparision remove that number
-# 2) if the absolute difference is less than 1 or equal to one
-# 3) append those two numbers into the array
-# 4) lastly return the largest size of array among collection of arrays
-
+a = [1,1,2,2,4,4,5,5,5]
 
 def pickingNumbers(a):
 
-    numbers_list = []
+    number = 1
 
+    # taking a list to store all the numbers
+    list_to_store_numbers = []
+
+    # taking a counter to count the number of iterations which loop took
+    counter = 0
+
+    # 1) finding out numbers which when differentiated absolutely give result less than or equal to 1
     for x in range(len(a)):
 
-        lists = []
+        if(counter == 0):
+            list_to_store_numbers.append(a[x])
+        
 
-        lists.append(a[x])
+        # a) opt a number and find out numbers which are in the range of {number - 1, number, number + 1}
+        if((number == a[x]) or (a[x] == (number-1)) or (a[x] == (number + 1))):
+            list_to_store_numbers.append(a[x])
+        
+        counter += 1
 
-        for y in range(x, len(a)):
+    print(list_to_store_numbers)        
 
-            if(abs(a[x] - a[y]) <= 1):
-                lists.append(a[y])
+pickingNumbers(a)
 
-        numbers_list.append(lists)
 
-    print(numbers_list)
-
-    length_of_lists = len(numbers_list[0])
-
-    for x in range(len(numbers_list)):
-
-        if(length_of_lists < len(numbers_list[x])):
-            length_of_lists = len(numbers_list[x])
     
-    return length_of_lists
-
-print(pickingNumbers([4, 6, 5, 3, 3, 1]))
+    
+    

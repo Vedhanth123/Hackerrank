@@ -2,20 +2,25 @@
 
 # The jailer is playing a little joke, though. The last piece of candy looks like all the others, but it tastes awful. Determine the chair number occupied by the prisoner who will receive that candy.
 
-# 1) divide the number of chocolates by the number of seats
-# 2) return absolute of starting seat - remainder
+
+def saveThePrisoner(n, m, s):
 
 
-        
-def saveThePrisoner(n,k,s):
+    # find the remainder of m and n
+    # write down the remainder
+    # add the (remainder - 1) to the s    
 
-    remainder = k % n
+    # return the answer
 
-    seat = (s + remainder) - 1
+    remainder = m % n
 
-    if(seat > n):
-        return abs(seat - n)
-    
-    return seat
+    if(remainder == 0):
+        answer = n
+    else:
+        answer = s + (remainder - 1)
 
-print(saveThePrisoner(7,19,4))
+    return answer
+
+for _ in range(1,10**9):
+    print(f"{saveThePrisoner(5,_,1)} {_}" )
+

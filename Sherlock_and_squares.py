@@ -28,4 +28,4 @@ def squares(a, b):
     return no_of_squares    
 
 
-squares(17,24)
+print(squares(17,24))
