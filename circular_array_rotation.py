@@ -2,3 +2,9 @@
 
 # For each array, perform a number of right circular rotations and return the values of the elements at the given indices.
 
+def circularArrayRotation(a, k, queries):
+
+    # 1) Place the last element of the array in the first place
+    # 2) Move the latter elements to right of the array
+
+    
