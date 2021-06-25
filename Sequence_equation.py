@@ -1,4 +1,5 @@
 
+
 def permutationEquation(p):
     # Write your code here
 
@@ -27,7 +28,7 @@ def permutationEquation(p):
         y_array.append(second_index)
     
     return y_array
-    
+
 permutationEquation([4,3,5,1,2])
 
 
