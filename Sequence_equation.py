@@ -2,19 +2,19 @@
 def permutationEquation(p):
     # Write your code here
 
-    y = []
+    y_array = []
 
     # 1) start from the 0th index of the array
 
-    for x in range(len(p)):
+    for a in range(len(p)):
 
         # find out the index in which the value of x is at
 
         for x in range(len(p)):
 
-            if(p[x] == x):
+            if(p[x] == a+1):
 
-                first_index = p[x]
+                first_index = x + 1
 
         
         # find out the index in which the value of p[x] is at
@@ -22,12 +22,12 @@ def permutationEquation(p):
 
             if(p[y] == first_index):
 
-                second_index = p[y]
+                second_index = y + 1
         
-        y.append(second_index)
+        y_array.append(second_index)
     
-    return y
-
+    return y_array
+    
 permutationEquation([4,3,5,1,2])
 
 
