@@ -8,6 +8,8 @@ def jumpingOnClouds(c, k):
     # variable for index of array
     i = 0
 
+    # written a new line 
+    
     while(i == 0 and e < 100):
 
         # increment the index of the array by two
