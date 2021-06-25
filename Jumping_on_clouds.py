@@ -9,6 +9,8 @@ def jumpingOnClouds(c, k):
     i = 0
 
     # written a new line 
+
+    # another new line
     
     while(i == 0 and e < 100):
 
