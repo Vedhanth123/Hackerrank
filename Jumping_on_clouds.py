@@ -11,7 +11,9 @@ def jumpingOnClouds(c, k):
     # written a new line 
 
     # another new line
-    
+
+    # thrid new line
+
     while(i == 0 and e < 100):
 
         # increment the index of the array by two
