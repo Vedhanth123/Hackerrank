@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// array program
 
 template <typename T>
 void array_function()
