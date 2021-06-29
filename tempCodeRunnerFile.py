@@ -1,3 +1,13 @@
-= square_of_number[:size_of_squared_number-no_of_digits_of_original_number]
-            
-            right
+
+# for i in range(1, 6):
+
+#     print(array[i])
+
+# for i in range(1, 6):
+
+#     array[i] = i + 1
+
+# for i in range(1, 6):
+
+#     print(array[i])
+
