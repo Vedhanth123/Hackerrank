@@ -3,6 +3,7 @@
 
 // new line
 
+// new line 2
 void traversing(int r_q, int c_q, int **chessboard, int n)
 {
 
