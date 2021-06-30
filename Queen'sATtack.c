@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// new line
 
 void traversing(int r_q, int c_q, int **chessboard, int n)
 {
