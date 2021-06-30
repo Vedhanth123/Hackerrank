@@ -229,6 +229,8 @@ int queensAttack(int n, int k, int r_q, int c_q, int obstacles_rows, int obstacl
 
 int main()
 {
+    int obstacles[3][2] = {{5,5},{4,2},{2,3}};
+    printf("%d",queensAttack(5,3,4,3,3,2,obstacles));
     
 }
 
