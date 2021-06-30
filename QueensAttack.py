@@ -1,4 +1,6 @@
 # function for traversing the queen
+
+# new line
 def traversing(r_q, c_q, chessboard, n):
 
     # 1) traversing queen upward
@@ -150,7 +152,20 @@ def queensAttack(n, k, r_q, c_q, obstacles):
     return blocks_traversed
 
 
-queensAttack(5,3,4,3, [[5, 5], [4, 2], [2, 3]])
+queensAttack(88587, 9,
+20001, 20003,
+[
+[20001, 20002],
+[20001 ,20004],
+[20000, 20003],
+[20002, 20003],
+[20000, 20004],
+[20000 ,20002],
+[20002 ,20004],
+[20002 ,20002],
+[564 ,323]
+]
+)
 
 
 
